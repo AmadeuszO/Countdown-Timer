@@ -5,19 +5,29 @@
     <title>Countdown Timer</title>
 </head>
 <body>
-  <h1>Countdown Timer</h1>
+<h1>Countdown Timer</h1>
 <div class="wrapper">
-<!---->
-  <div class="container-input">
-    <label for="hours">Hours:</label>
-    <input id="hours" type="number">
+    <!---->
+    <div class="container-input">
+        <label for="hours">Hours:</label>
+        <input id="hours" type="text" min="0" value="0">
 
-    <label for="minutes">Hours:</label>
-    <input id="minutes" type="number">
+        <label for="minutes">Minutes:</label>
+        <input id="minutes" type="text" min="0" value="0">
 
-    <label for="secunds">Hours:</label>
-    <input id="secunds" type="number">
-  </div>
+        <label for="seconds">Seconds:</label>
+        <input id="seconds" type="text" min="0" value="0">
+
+        <button id="start">Start</button>
+    </div>
+    <!---->
+    <div class="timer">
+        <h2>
+            <div id="hoursPut"></div>
+            <div id="minutesPut"></div>
+            <div id="sePut"></div>
+        </h2>
+    </div>
 </div>
 </body>
 </html>
