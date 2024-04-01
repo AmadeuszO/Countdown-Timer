@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Countdown Timer</title>
 </head>
 <body>
-<h1>Countdown Timer</h1>
 <div class="wrapper">
     <!---->
+    <h1>Countdown Timer</h1>
     <div class="container-input">
-        <label for="hours">Hours:</label>
-        <input id="hours" type="text" min="0" value="0">
-
-        <label for="minutes">Minutes:</label>
-        <input id="minutes" type="text" min="0" value="0">
-
-        <label for="seconds">Seconds:</label>
-        <input id="seconds" type="text" min="0" value="0">
+        <div class="content">
+            <label for="hours">Hours:</label>
+            <input id="hours" type="text" min="0" value="0">
+        </div>
+        <!---->
+        <div class="content">
+            <label for="minutes">Minutes:</label>
+            <input id="minutes" type="text" min="0" value="0">
+        </div>
+        <!---->
+        <div class="content">
+            <label for="seconds">Seconds:</label>
+            <input id="seconds" type="text" min="0" value="0">
+        </div>
 
         <button id="start">Start</button>
     </div>
     <!---->
     <div class="timer">
         <h2>
-            <div id="hoursPut"></div>
-            <div id="minutesPut"></div>
-            <div id="sePut"></div>
+            <div id="hours-put"></div>
+            <div id="minutes-put"></div>
+            <div id="seconds-put"></div>
         </h2>
     </div>
 </div>
