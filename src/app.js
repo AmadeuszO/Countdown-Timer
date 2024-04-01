@@ -10,7 +10,7 @@ const startTimer = document.querySelector('#start-timer');
 
 //
 let time;
-let timeInterval;
+let timerInterval;
 
 const updateTimer = () => {
     if (time) {
@@ -44,7 +44,7 @@ startTimer.addEventListener('click', () => {
     date.setMinutes(futureMinutes + currentMinutes);
     date.setSeconds(currentSeconds + futureSeconds);
 
-    targetTime = date.getTime();
+    time = date.getTime();
     localStorage.setItem('targetTime', targetTime);
     updateTimer();
     timerInterval = setInterval(updateTimer, 500);
@@ -54,7 +54,7 @@ startTimer.addEventListener('click', () => {
 const storedTargetTime = localStorage.getItem('targetTime');
 
 if (storedTargetTime) {
-    targetTime = storedTargetTime;
+    time = storedTargetTime;
     updateTimer();
     timerInterval = setInterval(updateTimer, 500);
 }
